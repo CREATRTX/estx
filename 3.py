@@ -4,6 +4,9 @@ projects. Each node is a child of the root registry in MMEngine.
 More details can be found at
 https://mmengine.readthedocs.io/en/latest/tutorials/registry.html.
 """
+from mmengine.registry import \
+    WEIGHT_INITIALIZERS as MMENGINE_WEIGHT_INITIALIZERS
+from mmengine.registry import Registry
 
 from mmengine.registry import DATA_SAMPLERS as MMENGINE_DATA_SAMPLERS
 from mmengine.registry import DATASETS as MMENGINE_DATASETS
