@@ -26,9 +26,6 @@ from mmengine.registry import TASK_UTILS as MMENGINE_TASK_UTILS
 from mmengine.registry import TRANSFORMS as MMENGINE_TRANSFORMS
 from mmengine.registry import VISBACKENDS as MMENGINE_VISBACKENDS
 from mmengine.registry import VISUALIZERS as MMENGINE_VISUALIZERS
-from mmengine.registry import \
-    WEIGHT_INITIALIZERS as MMENGINE_WEIGHT_INITIALIZERS
-from mmengine.registry import Registry
 
 # manage all kinds of runners like `EpochBasedRunner` and `IterBasedRunner`
 RUNNERS = Registry(
