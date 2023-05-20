@@ -69,6 +69,9 @@ WEIGHT_INITIALIZERS = Registry(
     'weight initializer',
     parent=MMENGINE_WEIGHT_INITIALIZERS,
     locations=['mmdet.models'])
+# manage task-specific modules like anchor generators and box coders
+TASK_UTILS = Registry(
+    'task util', parent=MMENGINE_TASK_UTILS, locations=['mmdet.models'])
 
 # manage all kinds of optimizers like `SGD` and `Adam`
 OPTIMIZERS = Registry(
@@ -97,9 +100,7 @@ METRICS = Registry(
 EVALUATOR = Registry(
     'evaluator', parent=MMENGINE_EVALUATOR, locations=['mmdet.evaluation'])
 
-# manage task-specific modules like anchor generators and box coders
-TASK_UTILS = Registry(
-    'task util', parent=MMENGINE_TASK_UTILS, locations=['mmdet.models'])
+
 
 # manage visualizer
 VISUALIZERS = Registry(
