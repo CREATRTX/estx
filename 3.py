@@ -28,7 +28,13 @@ from mmengine.registry import RUNNERS as MMENGINE_RUNNERS
 from mmengine.registry import TASK_UTILS as MMENGINE_TASK_UTILS
 from mmengine.registry import TRANSFORMS as MMENGINE_TRANSFORMS
 from mmengine.registry import VISBACKENDS as MMENGINE_VISBACKENDS
-from mmengine.registry import VISUALIZERS as MMENGINE_VISUALIZERS
+from mmengine.registry import VISUALIZERS as MMENGINE_VISUALIZERS    RUNNER_CONSTRUCTORS as MMENGINE_RUNNER_CONSTRUCTORS
+from mmengine.registry import RUNNERS as MMENGINE_RUNNERS
+from mmengine.registry import TASK_UTILS as MMENGINE_TASK_UTILS
+from mmengine.registry import TRANSFORMS as MMENGINE_TRANSFORMS    RUNNER_CONSTRUCTORS as MMENGINE_RUNNER_CONSTRUCTORS
+from mmengine.registry import RUNNERS as MMENGINE_RUNNERS
+from mmengine.registry import TASK_UTILS as MMENGINE_TASK_UTILS
+from mmengine.registry import TRANSFORMS as MMENGINE_TRANSFORMS
 
 # manage all kinds of runners like `EpochBasedRunner` and `IterBasedRunner`
 RUNNERS = Registry(
