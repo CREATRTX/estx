@@ -17,6 +17,17 @@ class GNNModel(nn.Module):
         x = F.dropout(x, training=self.training)
         x = self.conv2(x, edge_index)
         return F.log_softmax(x, dim=1)
+class GNNModel(nn.Module):
+    def __init__(self, in_features, hidden_features, num_classes):
+        super(GNNModel, self).__init__()
+        self.conv1 = GCNConv(in_features, hidden_features)
+        self.conv2 = GCNConv(hidden_features, num_classes)
+        
+    def forward(self, x, edge_index):
+        x = F.relu(self.conv1(x, edge_index))
+        x = F.dropout(x, training=self.training)
+        x = self.conv2(x, edge_index)
+        return F.log_softmax(x, dim=1)
 
 # 加载数据集
 dataset = Planetoid(root='/path/to/dataset', name='Cora')
